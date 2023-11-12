@@ -32,10 +32,18 @@
     </div>
    </header>
    <main>
-    <div class="container">
+    <div class="container_main">
         <div class="hamburger">
-            <div class="chat"><i class="fa-solid fa-caret-right"></i> Chat</div>
-            <div class="chat"><i class="fa-solid fa-caret-right"></i> Spaces</div>
+            <div class="chat"><i class="fa-solid fa-caret-right"></i> Chat <i class="fa-solid fa-plus" style="float: right;"></i></div>
+            <div class="chat chat_space">
+                <div>
+                    <i class="fa-solid fa-caret-right"></i> Spaces
+                    <i class="fa-solid fa-plus" style="float: right;"></i>
+                </div>
+                <a href="space.html" class="name">
+                    <span>A</span><span>Aman</span>
+                </a>
+            </div>
             <div class="chat"><i class="fa-solid fa-caret-right"></i> Meet</div>
             <div class="chat_small"><i class="fa-solid fa-circle" style="color: #00ac47;" id="active"></i> Active</div>
             <div class="chat_small"><i class="fa-solid fa-pencil"></i> Add a status</div>
@@ -43,9 +51,12 @@
             <div class="chat_small"><i class="fa-solid fa-question"></i> Help and feedback</div>
         </div>
         <div class="data">
+            <p class="heading_space">spaces</p>
             <div class="text_small">
-                <p>Nothing in chat</p>
-                <p>Find someone to chat with by selecting the new chat button.</p>
+                <a href="space.html" >
+                    <span id="small_a">A</span><span>Aman</span>
+                </a>
+                <span>Yesterday</span>
             </div>
             <div class="text">
                 <p>Welcome, Aman</p>
@@ -78,9 +89,6 @@
             </div>
         </div>
         <div class="new_chat">
-            <button><i class="fa-regular fa-message"></i> New chat</button>
-        </div>
-        <div class="new_chat" style="display: none;">
             <button><i class="fa-solid fa-plus"></i> New space</button>
         </div>
     </div>
@@ -88,11 +96,11 @@
    <footer>
     <div class="footer">
         <div class="footer_data">
-            <div class="foot_btn" onclick=goChat()>
+            <div class="foot_btn" >
                 <i class="fa-regular fa-message"></i>
                 <span>Chat</span>
             </div>
-            <div class="foot_btn" onclick=goSpace()>
+            <div class="foot_btn" >
                 <i class="fa-solid fa-people-group"></i>
                 <span>Spaces</span>
             </div>

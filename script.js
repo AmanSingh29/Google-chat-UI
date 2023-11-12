@@ -1,15 +1,15 @@
-const goSpace = () => {
-  let a = document.getElementsByClassName("new_chat")[0];
-  a.style.display = "none";
-  let b = document.getElementsByClassName("new_chat")[1];
-  b.style.display = "block";
-};
-const goChat = () => {
-  let a = document.getElementsByClassName("new_chat")[1];
-  a.style.display = "none";
-  let b = document.getElementsByClassName("new_chat")[0];
-  b.style.display = "block";
-};
+// const goSpace = () => {
+//   let a = document.getElementsByClassName("new_chat")[0];
+//   a.style.display = "none";
+//   let b = document.getElementsByClassName("new_chat")[1];
+//   b.style.display = "block";
+// };
+// const goChat = () => {
+//   let a = document.getElementsByClassName("new_chat")[1];
+//   a.style.display = "none";
+//   let b = document.getElementsByClassName("new_chat")[0];
+//   b.style.display = "block";
+// };
 
 const ham = () => {
   let a = document.getElementsByClassName("hamburger")[0];
