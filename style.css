@@ -192,6 +192,21 @@ a{
     display: none;
 }
 
+.sidebar{
+    position: absolute;
+    right: 0;
+    height: 91vh;
+    background-color: #F6F8FC;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
+}
+.sidebar img{
+    width: 35px;
+    margin: 15px 0;
+}
+
 .new_chat button{
     border: none;
     outline: none;
@@ -351,14 +366,22 @@ i{
     cursor: pointer;
 }
 .text_small{
-    margin-top: 8px;
+    /* margin-top: 8px; */
+    padding-top: 12px;
+    
     display: none;
-    justify-content: space-between !important;
+    background-color: rgb(244, 241, 241);
+    justify-content: space-around !important;
 }
 .text_small > span{
-    margin: 0 8px;
     color: gray;
     font-size: 14px;
+    padding-bottom: 5px;
+    font-weight: 500 !important;
+}
+#s_chat{
+    color: rgb(159, 33, 159);
+    border-bottom: 3px solid rgb(159, 33, 159);
 }
 #small_a{
     margin: 0 8px;
@@ -376,8 +399,7 @@ i{
     display: none !important;
 }
 .small_chat{
-    /* display: none; */
-    background-color: #e6f4f7;
+    background-color: rgb(244, 241, 241);
 }
 .name_a{
     display: inline-flex;
@@ -453,6 +475,9 @@ i{
 .big_chat_last i{
     margin: 0 10px;
     font-size: 18px;
+}
+.big_chat_last{
+    margin-right: 50px;
 }
 /* ---------------------Mediaqueries------------------------ */
 
@@ -534,6 +559,12 @@ i{
     }
 }
 @media only screen and (max-width : 510px){
+    .sidebar{
+        display: none;
+    }
+    .space_section{
+        margin-top: 50px;
+    }
     .double{
         display: block;
     }
@@ -590,11 +621,11 @@ i{
         display: block;
     }
     .container{
-        height: 70vh;
+        height: 80vh;
         display: block;
     }
     .container_main{
-        height: 70vh;
+        height: 80vh;
         display: block;
     }
     .footer{
@@ -628,8 +659,9 @@ i{
     }
     .space_btn button{
         margin: 6px 0;
-        padding: 8px 15px;
+        padding: 9px 15px;
         border-radius: 20px;
+        color: rgb(159, 33, 159);
     }
     .space_img img{
         width: 200px;
