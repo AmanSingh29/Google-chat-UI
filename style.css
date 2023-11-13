@@ -199,7 +199,7 @@ a{
 }
 .new_chat{
     position: absolute;
-    bottom: 25px;
+    bottom: 30px;
     right: 20px;
     display: none;
     z-index: -1;
