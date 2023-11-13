@@ -198,8 +198,8 @@ a{
     cursor: pointer;
 }
 .new_chat{
-    position: absolute;
-    bottom: 30px;
+    position: fixed;
+    top: 80%;
     right: 20px;
     display: none;
     z-index: -1;
