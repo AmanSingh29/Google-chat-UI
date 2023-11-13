@@ -736,3 +736,23 @@ i{
         width: 90vw;
     }
 }
+@media only screen and (max-height : 625px){
+    .space_section{
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-height : 590px){
+    .space_img img{
+        width: 150px;
+    }
+}
+@media only screen and (max-height : 545px){
+    .space_img > span{
+        margin: 5px 0;
+    }
+    .space_btn button{
+        margin: 4px 0;
+        padding: 6px 10px;
+        border-radius: 20px;
+    }
+}
