@@ -37,6 +37,9 @@ a{
     font-size: 22px;
     padding: 5px;
 }
+.search img{
+    display: none;
+}
 
 .search{
     background-color: #EAF1FB;
@@ -44,8 +47,11 @@ a{
     padding: 6px 20px;
     border-radius: 25px;
 }
+.search i:nth-child(1){
+    display: none;
+}
 .search input{
-    width: 90%;
+    width: 80%;
     border: none;
     padding: 8px 0;
     font-size: 17px;
@@ -84,6 +90,12 @@ a{
 }
 
 .profile_pic img{
+    width: 35px;
+    margin: 0 8px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.search > img{
     width: 35px;
     margin: 0 8px;
     cursor: pointer;
@@ -373,6 +385,16 @@ i{
     background-color: rgb(244, 241, 241);
     justify-content: space-around !important;
 }
+.s_text_small{
+    margin-top: 11px;
+    display: none;
+    justify-content: space-between !important;
+}
+.s_text_small> span{
+    margin-right: 10px;
+    font-size: 13px;
+    color: gray;
+}
 .text_small > span{
     color: gray;
     font-size: 14px;
@@ -384,10 +406,10 @@ i{
     border-bottom: 3px solid rgb(159, 33, 159);
 }
 #small_a{
-    margin: 0 8px;
-    padding: 5px 8px;
+    margin: 0 10px;
+    padding: 5px 10px;
     color: green;
-    background-color: rgb(188, 239, 188);
+    background-color: rgb(216, 240, 216);
     border-radius: 4px;
 }
 .heading_space{
@@ -479,6 +501,15 @@ i{
 .big_chat_last{
     margin-right: 50px;
 }
+.foot_btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.foot_btn span{
+    margin-top: 3px;
+}
 /* ---------------------Mediaqueries------------------------ */
 
 @media only screen and (max-width : 930px){
@@ -559,6 +590,21 @@ i{
     }
 }
 @media only screen and (max-width : 510px){
+    .search img{
+        display: block;
+    }
+    .search i:nth-child(1){
+        display: block;
+    }
+    .search i:nth-child(2){
+        display: none;
+    }
+    .nav_start, .nav_end{
+        display: none;
+    }
+    .s_text_small{
+        display: flex;
+    }
     .sidebar{
         display: none;
     }
@@ -608,11 +654,14 @@ i{
         display: none;
     }
     .search{
-        width: 75vw;
-        padding: 5px 10px;
+        width: 92vw;
+        display: flex;
+        align-items: center;
+        padding: 12px 10px;
     }
     .search input{
         width: 80%;
+        margin: 0 10px;
     }
     .text, .images, .section{
         display: none;
@@ -677,6 +726,6 @@ i{
 }
 @media only screen and (max-width : 380px){
     .search{
-        width: 65vw;
+        width: 90vw;
     }
 }
