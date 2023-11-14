@@ -252,6 +252,7 @@ a{
     height: 91vh;
     display: flex;
     flex-direction: column;
+    position: absolute;
     justify-content: space-between;
     background-color: #EAF1FB;
     transform: translateX(-100%);

@@ -14,32 +14,40 @@ const ham = () => {
 
 const reply = () => {
   let message = document.getElementById("msg").value;
+  let a = document.getElementById("msg");
 
-  if (message == "hello") {
+  if (message == "hello" || message == "Hello") {
     yourMessage("You", message);
     // Simulate a response after a delay
     setTimeout(() => {
       botMessage("Bot", "Hello, How are you?");
     }, 1000);
-  } else if (message == "good morning") {
+    a.value = "";
+  } else if (message == "good morning" || message == "Good morning") {
     yourMessage("You", message);
     // Simulate a response after a delay
     setTimeout(() => {
       botMessage("Bot", "Good morning, Have a nice day");
     }, 1000);
-  } else if (message == "good night") {
+    a.value = "";
+  } else if (message == "good night" || message == "Good night") {
     yourMessage("You", message);
     // Simulate a response after a delay
     setTimeout(() => {
       botMessage("Bot", "Good night, Sweet dreams");
     }, 1000);
-  } else if (message == "how are you") {
+    a.value = "";
+  } else if (message == "how are you" || message == "How are you") {
     yourMessage("You", message);
     // Simulate a response after a delay
     setTimeout(() => {
       botMessage("Bot", "I am good and what about you");
     }, 1000);
-  } else if (message == "what is the time now") {
+    a.value = "";
+  } else if (
+    message == "what is the time now" ||
+    message == "What is the time now"
+  ) {
     yourMessage("You", message);
     // Simulate a response after a delay
     setTimeout(() => {
@@ -47,6 +55,7 @@ const reply = () => {
       let text = d.toLocaleString();
       botMessage("Bot", `The time is ${text}`);
     }, 1000);
+    a.value = "";
   } else if (message == "") {
     alert("Please write something!");
   } else {
@@ -55,6 +64,7 @@ const reply = () => {
     setTimeout(() => {
       botMessage("Bot", "You are a web developer");
     }, 1000);
+    a.value = "";
   }
 };
 
