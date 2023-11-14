@@ -206,11 +206,11 @@ a{
 }
 
 .sidebar{
-    position: absolute;
+    position: fixed;
     right: 0;
     height: 91vh;
     background-color: #F6F8FC;
-    top: 0;
+    top: 64px;
     display: flex;
     flex-direction: column;
     padding: 0 12px;
@@ -254,7 +254,6 @@ a{
     flex-direction: column;
     justify-content: space-between;
     background-color: #EAF1FB;
-    position: absolute;
     transform: translateX(-100%);
 }
 
@@ -350,10 +349,13 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: sticky;
+    bottom:15px;
     margin: 20px 0;
 }
 .s_search{
     border: 1px solid gray;
+    background-color: #ffffff;
     width: 800px;
     padding: 3px 10px;
     border-radius: 25px;
@@ -508,6 +510,26 @@ i{
 .foot_btn span{
     margin-top: 3px;
 }
+
+/* ----------------------------messages-------------------------------- */
+
+.messages{
+    margin-bottom: 100px;
+}
+
+.messages > div{
+    background-color: rgb(181, 215, 229);
+    padding: 10px 20px;
+    margin: 4px 10px;
+    border-radius: 10px;
+}
+.messages > p{
+    border-radius: 10px;
+    background-color: rgb(213, 232, 184);
+    padding: 10px 20px;
+    margin: 4px 10px;
+}
+
 /* ---------------------Mediaqueries------------------------ */
 
 @media only screen and (max-width : 930px){

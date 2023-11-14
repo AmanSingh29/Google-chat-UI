@@ -11,3 +11,68 @@ const ham = () => {
     a.classList.add("hamclicked");
   }
 };
+
+const reply = () => {
+  let message = document.getElementById("msg").value;
+
+  if (message == "hello") {
+    yourMessage("You", message);
+    // Simulate a response after a delay
+    setTimeout(() => {
+      botMessage("Bot", "Hello, How are you?");
+    }, 1000);
+  } else if (message == "good morning") {
+    yourMessage("You", message);
+    // Simulate a response after a delay
+    setTimeout(() => {
+      botMessage("Bot", "Good morning, Have a nice day");
+    }, 1000);
+  } else if (message == "good night") {
+    yourMessage("You", message);
+    // Simulate a response after a delay
+    setTimeout(() => {
+      botMessage("Bot", "Good night, Sweet dreams");
+    }, 1000);
+  } else if (message == "how are you") {
+    yourMessage("You", message);
+    // Simulate a response after a delay
+    setTimeout(() => {
+      botMessage("Bot", "I am good and what about you");
+    }, 1000);
+  } else if (message == "what is the time now") {
+    yourMessage("You", message);
+    // Simulate a response after a delay
+    setTimeout(() => {
+      const d = new Date();
+      let text = d.toLocaleString();
+      botMessage("Bot", `The time is ${text}`);
+    }, 1000);
+  } else if (message == "") {
+    alert("Please write something!");
+  } else {
+    yourMessage("You", message);
+    // Simulate a response after a delay
+    setTimeout(() => {
+      botMessage("Bot", "You are a web developer");
+    }, 1000);
+  }
+};
+
+function yourMessage(sender, mes) {
+  let input = document.getElementsByClassName("messages")[0];
+  const messageDiv = document.createElement("div");
+  messageDiv.textContent = `${sender}: ${mes}`;
+  input.appendChild(messageDiv);
+
+  // Scroll to the bottom to show the latest message
+  input.scrollTop = input.scrollHeight;
+}
+function botMessage(sender, mes) {
+  let input = document.getElementsByClassName("messages")[0];
+  const messageDiv = document.createElement("p");
+  messageDiv.textContent = `${sender}: ${mes}`;
+  input.appendChild(messageDiv);
+
+  // Scroll to the bottom to show the latest message
+  input.scrollTop = input.scrollHeight;
+}
