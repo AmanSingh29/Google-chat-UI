@@ -23,6 +23,7 @@ const reply = () => {
       botMessage("Bot", "Hello, How are you?");
     }, 1000);
     a.value = "";
+    return;
   } else if (message == "good morning" || message == "Good morning") {
     yourMessage("You", message);
     // Simulate a response after a delay
@@ -30,6 +31,7 @@ const reply = () => {
       botMessage("Bot", "Good morning, Have a nice day");
     }, 1000);
     a.value = "";
+    return;
   } else if (message == "good night" || message == "Good night") {
     yourMessage("You", message);
     // Simulate a response after a delay
@@ -37,6 +39,7 @@ const reply = () => {
       botMessage("Bot", "Good night, Sweet dreams");
     }, 1000);
     a.value = "";
+    return;
   } else if (message == "how are you" || message == "How are you") {
     yourMessage("You", message);
     // Simulate a response after a delay
@@ -44,6 +47,7 @@ const reply = () => {
       botMessage("Bot", "I am good and what about you");
     }, 1000);
     a.value = "";
+    return;
   } else if (
     message == "what is the time now" ||
     message == "What is the time now"
@@ -56,6 +60,7 @@ const reply = () => {
       botMessage("Bot", `The time is ${text}`);
     }, 1000);
     a.value = "";
+    return;
   } else if (message == "") {
     alert("Please write something!");
   } else {
