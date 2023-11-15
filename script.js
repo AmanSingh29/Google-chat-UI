@@ -13,7 +13,7 @@ const ham = () => {
 };
 
 const reply = () => {
-  let message = document.getElementById("msg").value;
+  let message = document.getElementById("msg").value.trim();
   let a = document.getElementById("msg");
 
   if (message == "hello" || message == "Hello") {
@@ -63,14 +63,14 @@ const reply = () => {
     return;
   } else if (message == "") {
     alert("Please write something!");
+  } else {
+    yourMessage("You", message);
+    // Simulate a response after a delay
+    setTimeout(() => {
+      botMessage("Bot", "You are a web developer");
+    }, 1000);
+    a.value = "";
   }
-  // else {
-  //   yourMessage("You", message);
-  //   setTimeout(() => {
-  //     botMessage("Bot", "You are a web developer");
-  //   }, 1000);
-  //   a.value = "";
-  // }
 };
 
 const yourMessage = (sender, mes) => {
