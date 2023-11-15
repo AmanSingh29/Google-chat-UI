@@ -68,7 +68,7 @@ const reply = () => {
   }
 };
 
-function yourMessage(sender, mes) {
+const yourMessage = (sender, mes) => {
   let input = document.getElementsByClassName("messages")[0];
   const messageDiv = document.createElement("div");
   messageDiv.textContent = `${sender}: ${mes}`;
@@ -76,8 +76,8 @@ function yourMessage(sender, mes) {
 
   // Scroll to the bottom to show the latest message
   input.scrollTop = input.scrollHeight;
-}
-function botMessage(sender, mes) {
+};
+const botMessage = (sender, mes) => {
   let input = document.getElementsByClassName("messages")[0];
   const messageDiv = document.createElement("p");
   messageDiv.textContent = `${sender}: ${mes}`;
@@ -85,4 +85,4 @@ function botMessage(sender, mes) {
 
   // Scroll to the bottom to show the latest message
   input.scrollTop = input.scrollHeight;
-}
+};
